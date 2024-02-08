@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Calendar">
+
+    <fragment
+        android:id="@+id/navigation_Calendar"
+        android:name="com.example.calendarapp.ui.Calendar.CalendarFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/navigation_Assignments"
+        android:name="com.example.calendarapp.ui.Assignments.AssignmentFragment"
+        android:label="Exams"
+        tools:layout="@layout/fragment_exams" />
+
+    <fragment
+        android:id="@+id/navigation_ToDoList"
+        android:name="com.example.calendarapp.ui.ToDoList.ToDoListFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_assignmentsandtodolist" />
+</navigation>
